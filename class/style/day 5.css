@@ -1,0 +1,313 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'open sans', sans-serif;
+}
+
+.text-primary{
+    color: #FD6E0A;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 200px;
+}
+
+.nav-title{
+    color: #181818;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+nav > ul{
+    display: flex;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+    margin-right: 50px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #474747;
+}
+
+.icon{
+    display: none;
+}
+
+.header{
+    background-color: #FFF8F3;
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
+    background-repeat: no-repeat;
+    background-position: bottom right, left top;
+}
+
+.btn-primary{
+    border-radius: 5px;
+    background: #FD6E0A;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 35px;
+}
+
+.banner{
+    padding:30px 30px 0px 150px;
+    display: flex;
+    align-items: center;
+}
+
+.banner .profile-pic{
+    width: 500px;
+}
+
+.banner-greeting{
+    font-size: 45px;
+    color: #474747;
+    margin-bottom: 0;
+}
+
+.banner-title{
+    font-size: 85px;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* main */
+main{
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+main section{
+    margin-top: 130px;
+}
+
+.about{
+    padding: 130px;
+    border-radius: 10px;
+    background: #FFF8F3;
+    margin: 130px 0px;
+}
+
+.section-title{
+    color: #181818;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: normal
+}
+
+.section-description{
+    color: #757575;
+    text-align: center;
+    font-size: 18px;
+}
+
+.about-info-description{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-info{
+    text-align: center;
+}
+
+.info{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0px;
+    
+}
+
+.info-description{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 0px;
+}
+
+/* skills */
+#what-i-do-description{
+    padding: 30px 150px;
+}
+
+.skills-container{
+    display: flex;
+    gap: 24px;
+}
+
+
+.skills{
+    padding: 30px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0px 6px 50px 0px #0000000F;
+
+}
+
+.skill-description{
+    color: #757575;
+}
+
+.resume-column-title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #474747;
+}
+
+.resume-container{
+    display: flex;
+    gap: 50px;
+}
+
+.resume-item-title{
+    color: #474747;
+    margin-bottom: 10px;
+}
+
+.resume-item-info{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.resume-item-info, .resume-description{
+    color: #757575;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.resume-container hr{
+    margin: 30px 30px 30px 0px;
+}
+
+.download-cv{
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer{
+    display: flex;
+    background-color: #FFF8F3;
+    padding: 130px 200px;
+    margin-top: 100px;
+    gap: 100px;
+}
+
+.footer-column{
+    width: 50%;
+}
+
+.social-links a{
+    margin-right: 20px;
+}
+
+.contact input[type="text"], .contact input[type="email"],
+ textarea{
+    display: block;
+    margin-bottom: 25px;
+    padding: 18px 35px;
+    color: #757575;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    width: 100%;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .header{
+        background-image: none;
+    }
+
+    .banner .profile-pic{
+        width: 100%;
+    }
+
+    nav{
+        margin: auto;
+    }
+
+    nav > ul{
+        gap: 10px;
+    }
+
+    .btn-primary{
+        margin-bottom: 15px;
+    }
+
+    .skills-container, .resume-container, nav, nav > ul,
+     footer, .about-info-description, .banner{
+        flex-direction: column;
+    }
+
+    .banner, #what-i-do-description{
+        padding: 20px;
+    }
+
+    footer, .about{
+        padding: 10px;
+    }
+
+    .footer-column{
+        width: 100%;
+    }
+
+    .contact input[type="text"], .contact input[type="email"],
+     textarea {
+        width: 80%;
+     }
+
+    .resume-container{
+        padding-left: 20px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    .header{
+        background-image: none;
+    }
+
+    footer{
+        padding: 30px 30px 30px 40px;
+    }
+
+    .resume-container{
+        padding-left: 20px;
+    }
+
+    .btn-primary{
+        margin-bottom: 15px;
+    }
+
+    .banner .profile-pic{
+        width: 100%;
+    }
+
+    .banner, nav{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1138px) {
+    .btn-primary{
+        margin-bottom: 15px;
+    }
+}

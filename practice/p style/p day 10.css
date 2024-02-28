@@ -1,0 +1,277 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 90px 120px;
+}
+
+nav> ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav li a{
+    text-decoration: none;
+    color:  #3A3A3A;
+    font-weight: 600;
+}
+
+.nav-title{
+    color: #3A3A3A;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* banner */
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 140px 120px;
+}
+
+.banner-img{
+    background: url('../p-images/Circle\ design.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bnr-title{
+    color: #3A3A3A;
+    font-size: 52px;
+    font-weight: 700;
+    padding-bottom: 12px;
+}
+
+.bnr-description{
+    font-weight: 600;
+    width: 75%;
+    padding-bottom: 12px;
+}
+
+.btn-primary{
+    border-radius: 41px;
+    background: #E02C6D;
+    border: none;
+    padding: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.banner-img img{
+    width: 440px;
+}
+
+/* logo */
+.logo{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* display: grid;
+    grid-template-columns: repeat(7, 1fr); */
+    border-top: 1px solid #3A3A3A;
+    border-bottom: 1px solid #3A3A3A;
+    margin: 100px 130px;
+}
+
+.logo img{  
+    padding: 20px 25px;
+    width: 99px;
+}
+
+/* main */
+/* section card */
+.card-container{
+    margin: 100px 220px 100px 160px;
+}
+
+.section-title{
+    color: #3A3A3A;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card{
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 17px 15px ;
+}
+
+.price{
+    color: #000000DE;
+    font-size: 24px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+}
+
+small{
+    color: #5E6366;
+    font-weight: 700;
+}
+
+.card-description{
+    color: #787885;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: inter;
+}
+
+.see{
+    text-align: end;
+   margin-left: 870px;
+   margin-right: 0;
+   color: #E02C6D;
+   text-decoration: none;
+}
+
+/* features */
+.features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 120px 160px;
+    margin-right: 120px;
+}
+
+.features-content{
+    padding-left: 80px;
+}
+
+.content-title{
+    color: #0A0826;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.cntn-description{
+    color: #6C6C6C;
+    font-weight: 700;
+}
+
+.btn-class{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: #fff;
+    border: none;
+}
+
+/* footer */
+footer{
+    background-color: #0A0826;
+    height: 239px;
+    /* width: 100%; */
+    text-align: center;
+    margin-top: 100px;
+}
+
+.foot-title{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+.foot-description{
+    color: #D9DBE1;
+    font-weight: 700;
+    font-family: manrope;
+    padding: 3px;
+}
+
+.link{
+    color: #fff;
+    padding-top: 10px;
+}
+
+.link .fa-brands{
+    padding: 7px;
+    width: 24px;
+    height: 24px;
+}
+
+/* responsive layout */
+@media screen and (max-width: 576px) {
+    nav{
+        margin: 10px;
+        padding-top: 30px;
+    }
+
+    nav> ul{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        /* margin-left: 15px; */
+    }
+
+    nav, .banner{
+        flex-direction: column;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        margin: 0;
+        margin-left: 40px;
+    }
+
+    .btn-primary{
+        margin: 20px 70px;
+    }
+
+    .banner-img img{
+        width: 350px;
+    }
+
+    .logo{
+        margin: 10px;
+    }
+
+    .logo img{
+        padding: 10px;
+        width: 70px;
+    }
+
+    .card-container{
+        margin: 10px;
+    }
+
+    .card-content{
+        grid-template-columns: 1fr;
+    }
+
+    .features{
+        flex-direction: column-reverse;
+        margin: 80px 10px;
+    }
+
+    .features-content{
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .foot-container{
+        margin: 0;
+        padding: 0;
+    }
+}

@@ -1,0 +1,44 @@
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 2px solid black;
+    padding: 5px 10px;
+}
+
+nav > ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+nav li:hover{
+    background-color: burlywood;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav li .drop{
+    display: none;
+    position: absolute;
+    background-color: lightgreen;
+    padding-left: 10px;
+}
+
+nav li:hover > .drop{
+    display: block;
+}
+

@@ -1,0 +1,31 @@
+/**{
+    margin: 0;
+    pad: 0;
+}
+
+body{
+    background-color: rgb(30, 32, 30);
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.head{
+    flex: 1;
+    text-align: center;
+    
+}
+
+.img{
+    flex: 2;
+    text-align: end;
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid rgb(104, 95, 95);
+    
+    height: 200px;
+    
+}*/

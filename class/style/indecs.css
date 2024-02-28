@@ -1,0 +1,16 @@
+nav > ul > li{
+    display: inline;
+    margin: 20px;
+    background-color: brown;
+    padding: 5px;
+}
+
+
+nav li > a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+}

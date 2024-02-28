@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="./style/day 7.css">
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        nav a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .login-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        .login-form input{
+            margin-top: 20px;
+        }
+
+        .container{
+            display: flex;
+            height: 200px;
+            border: 2px solid red;
+            /* justfy-content: space-around;
+            justify-content: center;
+            justify-content: flex-start;
+            justify-content: flex-start; */
+            justify-content: space-between;
+
+
+            
+            /* align-items: center;
+            align-items: flex-start;
+            align-items: flex-end; */
+
+            /* flex-direction: row-reverse;
+            flex-direction: row;
+            flex-direction: column;
+            flex-direction: column-reverse; */
+            flex-wrap: wrap;
+        }
+
+        .box{
+            border: 3px dotted red;
+            width: 50px;
+            height: 50px;
+        }
+
+        .item-container{
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: repeat(3, 300px) 200px 150px;*/
+            /* grid-template-columns: repeat(6, 1fr) 2fr; */
+            grid-template-columns: 200px 200px 200px;
+            justify-content: space-around;
+            padding-top: 20px;
+        }
+
+        .item{
+            border: 1px solid blue;
+        }
+
+        .calender{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 30px repeat(6, 50px);
+            padding-top: 20px;
+            gap: 20px;
+        }
+
+        .date, .day{
+            background-color: skyblue;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+
+        .day{
+            background-color: lightgray;
+            font-size: 1.em;
+        }
+
+        .food-container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .food{
+            border: 1px solid red;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .food img{
+            width: 100%;
+        }
+
+        @media screen and (max-width: 578px) {
+            .food-container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 578px) and (max-width: 992px) {
+            .food-container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">profile</a>
+        </div>
+        <a href="">Login</a>
+    </nav>
+
+    <section class="login-container">
+        <form class="login-form">
+            <input type="email" name="" id="" placeholder="Your Email" required>
+            <input type="password" name="" id="" placeholder="Your password" required>
+            <input type="button" value="submit">
+        </form>
+    </section>
+
+
+
+    <br><br><br><br><br><br>
+    <h1>Flexbox layout</h1>
+    <div class="container">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div> 
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div> 
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div> 
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div> 
+    </div>
+
+    <div class="item-container">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        <div class="item">item-11</div>
+        <div class="item">item-12</div>
+        <div class="item">item-13</div>
+        <div class="item">item-14</div>
+        <div class="item">item-15</div>
+        <div class="item">item-16</div>
+        <div class="item">item-17</div>
+        <div class="item">item-18</div>
+        <div class="item">item-19</div>
+        <div class="item">item-20</div>
+    </div>
+
+
+    <div class="calender">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day">F</div>
+        <div class="day">S</div>
+
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">31</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+    </div><br> <br> <br><br><br><br>
+
+
+    <div class="food-container">
+        <div class="food">
+            <img src="./images/hardy.png" alt="">
+            <h3>Food Item -1</h3>
+            <p>Price: $100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur at distinctio atque blanditiis porro impedit, sint fugiat eligendi magni a.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/hardy.png" alt="">
+            <h3>Food Item -2</h3>
+            <p>Price: $200</p>
+            <p>Earum consequuntur dolor nesciunt nisi, quae nemo voluptatum sit neque modi architecto maiores similique velit maxime odio officiis quia praesentium?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/hardy.png" alt="">
+            <h3>Food Item -3</h3>
+            <p>Price: $300</p>
+            <p>Architecto, obcaecati itaque dolore laudantium cumque fugiat officia? Facilis numquam aut tempore dolore perspiciatis vitae recusandae animi rerum aliquid sit.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/hardy.png" alt="">
+            <h3>Food Item -4</h3>
+            <p>Price: $400</p>
+            <p>Harum nam hic voluptas quo odio sit enim error, nostrum quisquam veniam totam in, deleniti tempora fugiat doloremque soluta dolores?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/hardy.png" alt="">
+            <h3>Food Item -5</h3>
+            <p>Price: $500</p>
+            <p>Fugit, placeat quis excepturi pariatur quod autem deserunt quam praesentium eaque, sit quasi velit rem culpa ratione nostrum, aliquam rerum?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/hardy.png" alt="">
+            <h3>Food Item -6</h3>
+            <p>Price: $600</p>
+            <p>Numquam enim impedit, ex dolorum facere nesciunt quidem distinctio deleniti iure eum explicabo officia ipsa harum. Incidunt quaerat praesentium eveniet.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/hardy.png" alt="">
+            <h3>Food Item -7</h3>
+            <p>Price: $700</p>
+            <p>Maiores suscipit dolores facilis reprehenderit sint ducimus est impedit earum quis aliquam perferendis cupiditate ea explicabo libero, commodi facere in.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/hardy.png" alt="">
+            <h3>Food Item -8</h3>
+            <p>Price: $800</p>
+            <p>Quis ducimus repellat in fuga rem quas laudantium dolorum et excepturi. Veritatis unde quisquam similique consectetur veniam aliquid? Nam, dolore.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/hardy.png" alt="">
+            <h3>Food Item -9</h3>
+            <p>Price: $900</p>
+            <p>Animi, deserunt non. Hic enim laborum culpa numquam, cumque rerum! Aliquid iste natus praesentium repudiandae delectus libero quos amet suscipit!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/hardy.png" alt="">
+            <h3>Food Item -10</h3>
+            <p>Price: $1000</p>
+            <p>Sequi cum eveniet dolores, at reprehenderit excepturi eaque enim a? Tempore debitis iusto commodi reiciendis sit? Similique nihil doloribus officiis?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/hardy.png" alt="">
+            <h3>Food Item -11</h3>
+            <p>Price: $1100</p>
+            <p>Expedita nesciunt, repudiandae quasi architecto, quas, distinctio facere voluptate quos porro eligendi facilis modi dicta iste ratione asperiores officia iure?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="./images/hardy.png" alt="">
+            <h3>Food Item -12</h3>
+            <p>Price: $1200</p>
+            <p>Architecto, maxime reiciendis? Quam incidunt fugiat error eum consequuntur doloremque dolor dolorem asperiores assumenda accusamus repellat ut, minima in eveniet?</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>
